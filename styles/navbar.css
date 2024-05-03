@@ -1,0 +1,15 @@
+.navbar {
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    color: var(--primary-color);
+}
