@@ -1,9 +1,12 @@
 :root {
  --primary-color: #ffffff;
  --secondary-color: #007bff;
+ margin: 0;
 }
 
-
+body {
+ margin: 0;
+}
 
 .text {
 
