@@ -8,7 +8,7 @@ function AppendNavbarComponent() {
 }
 
 
-function SelectPageComponent(number) {
+export function SelectPageComponent(number) {
     if (number === 0) {
         fetch("pages/home.html").then(res =>res.text()).then(PageHTML => indexPageOutlet.innerHTML = PageHTML)
     } else if (number === 1) {
