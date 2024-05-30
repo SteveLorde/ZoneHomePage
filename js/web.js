@@ -1,6 +1,8 @@
 const indexNavbarElement = document.getElementById('index-navbar');
 const indexPageOutlet = document.getElementById('index-pageoutlet');
 
+fetch("pages/home.html").then(res => res.text()).then(PageHTML => indexPageOutlet.innerHTML = PageHTML)
+
 async function AppendNavbarComponent() {
     const navbarComponentHTML = await fetch("partialviews/navbar.html").then(res => res.text())
     indexNavbarElement.innerHTML = navbarComponentHTML
